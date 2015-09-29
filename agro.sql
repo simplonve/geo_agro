@@ -265,7 +265,6 @@ INSERT INTO `geo-agro` (`Nom`, `Activite`, `Contact`, `Telephone`, `Employes`, `
 ('LA PANICHAUDE', 'Cuisson de produits de boulangerie', '', '04 75 42 15 40', '2', 4.8916068, 44.9318971),
 ('LA PAILLOUNETTE', 'Boulangerie et boulangerie-pâtisserie', '', '04 75 41 56 33', 'n.d.', 4.8864742, 44.9219615),
 ('LA COMPAGNIE DES GOURMANDS', 'Boulangerie et boulangerie-pâtisserie', '', '', 'n.d.', 4.8918268, 44.9282017),
-('HM CLAUSE', 'Culture de légumes', 'contact@hmclause.com', '', 'n.d.', 4.8081970, 46.6672410),
 ('EUROPAGRO', 'Transformation et conservation de la viande de boucherie', 'ribes.europagro@orange.fr', '04 75 41 05 33', 'n.d.', 4.8896928, 44.8931417),
 ('EUROGOURMET', 'Fabrication industrielle de pain et de pâtisserie fraîche', '', '04 75 44 48 33', 'n.d.', 4.8923600, 44.9333930),
 ('CHOCOLATERIE PATISSERIE PIERRE DEBROAS', 'Pâtisserie', '', '', 'n.d.', 4.8917386, 44.9316861),
