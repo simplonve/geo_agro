@@ -6,12 +6,12 @@
     ?>
     <form action="#" method="post">
      <div class="form-group">
-      <label for="sel1">Select list:</label>
+      <label for="sel1">Choisir une activité :</label>
       <select class="form-control" id="sel1">
         <?php
           while($row = $read_data->fetch()){
         ?>
-            <option>
+            <option value="<?php echo utf8_encode($row['Activite']); ?>">
                 <?php echo utf8_encode($row['Activite']); ?>           
             </option>
         <?php   
@@ -19,7 +19,7 @@
         ?>
       </select>
     </div>
-    <input type='submit' type="text" name="Blabla" />
+    <input class="btn btn-success" type='submit' type="text" value="Rechercher" />
     </form>
     <?php
     $read_data->closeCursor();
