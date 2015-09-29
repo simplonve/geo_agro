@@ -10,7 +10,6 @@
       <title>Geoloc Agro</title>
     </head>
     <body>
-      <p>test</p>
      <?php 
      include('model/bdd_connect.php');
      include('model/bdd_read_agro.php');
