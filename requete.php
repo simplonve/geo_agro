@@ -26,6 +26,7 @@
     
     $_SESSION['entreprise'] = "";
     foreach($entreprises AS $entreprise){
+            $entreprise['Activite'] = utf8_encode($entreprise['Activite']);
             $_SESSION['entreprise'] = "{$_SESSION['entreprise']} [\"{$entreprise['Nom']}\", \"{$entreprise['Activite']}\", \"{$entreprise['Contact']}\", \"{$entreprise['Telephone']}\", \"{$entreprise['Employes']}\", {$entreprise['Lng']}, {$entreprise['Lat']} ],";
         };
     $_SESSION['entreprise'] = substr($_SESSION['entreprise'],0,-2) . "]";
