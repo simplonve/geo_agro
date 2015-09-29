@@ -14,9 +14,12 @@
     //     $where = "Activite = ?";
     //     array_push($query_parameters, $_POST['filtre']);
     // }
-    $where = "Charcuterie";
+    $_POST['activité'] == "" ? $parameter = "" : $paramater = 'WHERE Activite = ' . $_POST['activité'];
+ 
 
-    $reponse_filtre = $bdd->prepare('SELECT * FROM `geo-agro`');
+    $where = $parameter;
+
+    $reponse_filtre = $bdd->prepare('SELECT * FROM `geo-agro`' .  $where);
     $reponse_filtre->execute($query_parameters);
     while($ligne_entreprise = $reponse_filtre->fetch()) 
         { 

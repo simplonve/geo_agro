@@ -5,11 +5,8 @@
      $read_data->execute();
       while($row = $read_data->fetch()){
 
-      	echo iconv('UTF-8', 'ISO-8859-1', $row['Nom']);
-      	?>
-      	</br>
-      	<?php
-      	echo iconv('UTF-8', 'ISO-8859-1', $row['Activite']);
+      	echo iconv('UTF-8', 'ISO-8859-1', $row['Nom']); . '<br>' .  echo iconv('UTF-8', 'ISO-8859-1', $row['Activite'])
+      ;
       	?>
       	</br>
       	<?php
