@@ -12,7 +12,7 @@
     <body>
      <?php 
      include('model/bdd_connect.php');
-     include('model/bdd_read_agro.php');
+     include('model/bdd_requete_activite.php');
      ?>
     
     </body>

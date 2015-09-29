@@ -9,6 +9,7 @@
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
+SET NAMES 'utf8';
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -19,7 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Base de données :  `agro`
 --
-CREATE DATABASE IF NOT EXISTS `agro` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+
+CREATE DATABASE IF NOT EXISTS `agro` DEFAULT CHARACTER SET utf8 COLLATE utf8_bin;
 USE `agro`;
 
 -- --------------------------------------------------------
