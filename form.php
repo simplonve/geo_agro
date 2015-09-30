@@ -12,6 +12,7 @@
                 </div>
                 <div class="col-md-4">
                     <select class="form-control select" id="sel1" name="activite">
+                        <option value=""></option>
                         <?php
                         while($row = $read_data->fetch()){?>
                             <div class="col-md-offset-1 col-md-3">
