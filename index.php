@@ -8,6 +8,7 @@
       <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
       <link rel="stylesheet" href="css/leaflet.css" />
       <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+      <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
       <link href="css/style.css" rel="stylesheet" media="screen">
       <script src="js/jquery.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
@@ -24,7 +25,7 @@
                 <?php include('form.php');?>
             </div>
         </div>
-        <h2 class="titre-activite-affiche">Secteur d'activité : <?php echo $_SESSION['activite']; ?></h2>   
+        <h2 class="titre-activite-affiche">Secteur d'activité : <?php if(isset($_SESSION['activite'])){ echo $_SESSION['activite'];} ?></h2>   
         <div id="map"></div> 
         <script type="text/javascript">
             var map = L.map('map').setView([44.729735,5.2386539], 9);
