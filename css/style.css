@@ -6,6 +6,11 @@ body {
 	height: 100%; margin: 0; padding: 0;
 }
 
+.btn {
+	border: 2px solid rgb(167, 152, 152);
+	border-radius: 0px;
+}
+
 .titre {
 	text-shadow: 3px 3px rgb(21, 19, 19);
 }
@@ -39,6 +44,8 @@ body {
 
  .select {
  	width: 100%;
+ 	border: 1px solid rgb(167, 152, 152);
+	border-radius: 0px;
  }
 
  .titre {
