@@ -5,18 +5,46 @@ html {
 body { 
 	height: 100%; margin: 0; padding: 0;
 }
+
+.titre {
+	text-shadow: 3px 3px rgb(21, 19, 19);
+}
+
 .jumbotron {
-	background-image: url('../images/ble.jpg');
-	background-size: 150%;
-	height: 45%;
+	color: white;
+	background: url('../images/bg_annuaire.jpg');
+	background-size: 100%;
+	height: 30%;
+	filter: grayscale(0.5);
+    -webkit-filter: grayscale(0.5);
+    -moz-filter: grayscale(0.5);
+    -o-filter: grayscale(0.5);
+    -ms-filter: grayscale(0.5);
+}
+
+.filtre-image {
+/*	background-size: 100%;
+	height: 30%;*/
+	background-color: rgba(52, 73, 94, 0.66);	
+}
+
+.label-rechercher {
+	color: white;
+	font-size: 1.5em;
+	text-shadow: 3px 3px rgb(21, 19, 19);
+}
+
+.titre-activite-affiche {
+	margin-left: 5%;
+	margin-bottom: 2%;
 }
 
 #map { 
 /* 	width: 800px;
 	height: 480px; */
 	margin: auto;
-	width: 80%;
-	height: 80%;
+	width: 90%;
+	height: 100%;
 	border: solid 1px black;
   }
 

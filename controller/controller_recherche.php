@@ -1,15 +1,9 @@
 <?php  
     session_start();
-     echo $_POST['activite']; 
 
-     try
-     {
-         $bdd = new PDO('mysql:host=localhost;dbname=agro', 'root', '', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
-     }
-     catch (Exception $e)
-     {
-         die('Erreur : ' . $e->getMessage());
-     };
+    $_SESSION['activite'] = $_POST['activite'];
+
+    include('../model/bdd_connect.php');
 
      $query_parameters = [];
      $entreprises = [];
@@ -37,9 +31,5 @@
          };
      $_SESSION['entreprise'] = substr($_SESSION['entreprise'],0,-2) . "]";
 
- ?>
-     
-    
-    <?php
-        header('Location: ../index.php');      
-    ?>
+    header('Location: ../index.php');      
+?>

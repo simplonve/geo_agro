@@ -17,14 +17,18 @@
     <body>
         <?php 
         include('model/bdd_connect.php');?>
-        <div class="jumbotron">
-          <h1 class="titre">Géo-Agro</h1>
-          <?php include('form.php');?>
-        </div>   
-        <!-- <div id="map"></div> -->
+        <div class="filtre-image">  
+            <div class="jumbotron">
+                <h1 class="titre">Les entreprises de l’Agroalimentaire en</h1>
+                <h1 class="titre">Drôme Ardèche</h1>
+                <?php include('form.php');?>
+            </div>
+        </div>
+        <h2 class="titre-activite-affiche">Secteur d'activité : <?php echo $_SESSION['activite']; ?></h2>   
         <div id="map"></div> 
         <script type="text/javascript">
             var map = L.map('map').setView([44.729735,5.2386539], 9);
+            map.scrollWheelZoom.disable();
             var myIcon = L.icon({
                 iconUrl: 'images/marker-icon.png'
             });

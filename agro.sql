@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 --
 -- Base de données :  `agro`
 --
-CREATE DATABASE IF NOT EXISTS `agro` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+CREATE DATABASE IF NOT EXISTS `agro` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 USE `agro`;
 
 -- --------------------------------------------------------
@@ -37,7 +37,7 @@ CREATE TABLE IF NOT EXISTS `geo-agro` (
   `Employes` varchar(4) DEFAULT NULL,
   `Lng` decimal(25,7) DEFAULT NULL,
   `Lat` decimal(24,7) DEFAULT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=238 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=238 DEFAULT CHARSET=utf8 COLLATE utf8_general_ci;
 
 --
 -- Contenu de la table `geo-agro`
