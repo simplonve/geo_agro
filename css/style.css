@@ -5,10 +5,25 @@ html {
 body { 
 	height: 100%; margin: 0; padding: 0;
 }
+.jumbotron {
+	background-image: url('../images/ble.jpg');
+	background-size: 150%;
+	height: 45%;
+}
 
 #map { 
 /* 	width: 800px;
 	height: 480px; */
-	width:50%;
-	height: 50%;
+	margin: auto;
+	width: 80%;
+	height: 80%;
+	border: solid 1px black;
   }
+
+ .select {
+ 	width: 100%;
+ }
+
+ .titre {
+ 	text-align: center;
+ }

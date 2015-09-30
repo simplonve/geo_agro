@@ -16,15 +16,17 @@
     </head>
     <body>
         <?php 
-        include('model/bdd_connect.php');
-        include('form.php')
-        ?>   
+        include('model/bdd_connect.php');?>
+        <div class="jumbotron">
+          <h1 class="titre">Géo-Agro</h1>
+          <?php include('form.php');?>
+        </div>   
         <!-- <div id="map"></div> -->
         <div id="map"></div> 
         <script type="text/javascript">
             var map = L.map('map').setView([44.729735,5.2386539], 9);
             var myIcon = L.icon({
-                iconUrl: 'images/marker-icon2.png'
+                iconUrl: 'images/marker-icon.png'
             });
             L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: 'Map data &copy; <a href="http://www.osm.org">OpenStreetMap</a>' }).addTo(map);
 
